@@ -4,6 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio</title>
+        <script
+            src="https://kit.fontawesome.com/d46ed99af6.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
         <!-- TODO:
@@ -12,49 +17,61 @@
 
         <div id="main--wrapper">
             <!-- ! User info section -->
-            <section id="myInfo" class="user--info">
-                <img src="./assets/images/user.png" alt="AmanDeep" />
+            <section id="myInfo" class="user--info flex">
+                <img
+                    src="./assets/images/user.png"
+                    alt="AmanDeep"
+                    class="user--image"
+                />
 
-                <div class="user--info">
-                    <h2 class="user--name">AmanDeep</h2>
-                    <p class="user--role">Front-end Developer</p>
-                    <p class="user--email">amandeep58257@gmail.com</p>
-                    <p class="user--contact">9810823911</p>
-                </div>
+                <div class="user--details">
+                    <div class="user--personal--details flex">
+                        <div class="personal--details">
+                            <h2 class="user--name">AmanDeep</h2>
+                            <p class="user--role">Front-end Developer</p>
+                        </div>
+                        <div class="contact--details">
+                            <p class="user--email">
+                                <i class="fas fa-envelope"></i>
+                                amandeep58257@gmail.com
+                            </p>
+                            <p class="user--contact">
+                                <i class="fas fa-phone-alt"></i>
+                                9810823911
+                            </p>
+                        </div>
+                    </div>
 
-                <div class="user--description">
-                    <p>
+                    <div class="user--description">
                         Self-motivated developer, who is willing to learn and
                         create outstanding UI applications.
-                    </p>
+                    </div>
                 </div>
             </section>
 
             <!-- ! User skills section -->
             <article id="skills" class="skills--wrapper">
-                <h2>Front Header</h2>
-                <div class="fronend--skills">
-                    <ul>
-                        <li class="frontend--skill--1">
-                            <span>React</span><span class="bar"></span>
-                        </li>
-                        <li class="frontend--skill--2">
-                            <span>Javascript</span><span class="bar"></span>
-                        </li>
-                        <li class="frontend--skill--3">
-                            <span>CSS</span><span class="bar"></span>
-                        </li>
-                        <li class="frontend--skill--4">
-                            <span>Vue</span><span class="bar"></span>
-                        </li>
-                        <li class="frontend--skill--5">
-                            <span>Redux</span><span class="bar"></span>
-                        </li>
-                        <li class="frontend--skill--6">
-                            <span>React Native</span><span class="bar"></span>
-                        </li>
-                    </ul>
-                </div>
+                <h2>Front End</h2>
+                <ul class="frontend--skills">
+                    <li class="frontend--skill--item">
+                        React<span class="bar react"></span>
+                    </li>
+                    <li class="frontend--skill--item">
+                        Javascript<span class="bar javascript"></span>
+                    </li>
+                    <li class="frontend--skill--item">
+                        CSS</span><span class="bar css"></span>
+                    </li>
+                    <li class="frontend--skill--item">
+                        Vue</span><span class="bar vue"></span>
+                    </li>
+                    <li class="frontend--skill--item">
+                        Redux</span><span class="bar redux"></span>
+                    </li>
+                    <li class="frontend--skill--item">
+                        React Native</span><span class="bar react__native"></span>
+                    </li>
+                </ul>
             </article>
 
             <!-- ! Blogs  -->
@@ -109,7 +126,7 @@
                     <div class="company">
                         <div class="company--logo">
                             <img
-                                src="assets/images/company-1.png"
+                                src="assets/images/company-2.png"
                                 alt="Company2"
                             />
                         </div>
@@ -130,7 +147,7 @@
                     <div class="company">
                         <div class="company--logo">
                             <img
-                                src="assets/images/company-1.png"
+                                src="assets/images/company-3.png"
                                 alt="Company3"
                             />
                         </div>

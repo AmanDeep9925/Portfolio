@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* ! Default settings for the UI */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: inherit;
+    background-color: #e4e6e6;
+}
+
+p {
+    max-width: 600px;
+    margin-block-start: 3px;
+    margin-block-end: 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+
+img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Common classes */
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+/* ! Styling the main wrapper */
+
+#main--wrapper {
+    margin: auto;
+    max-width: 900px;
+    padding: 10px;
+}
+
+/* ! User--Info */
+
+.user--info {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 1);
+    background-color: #ffffff;
+}
+
+.user--image {
+    max-width: 250px;
+    max-height: 300px;
+    border-radius: 5px;
+    margin-right: 20px;
+    object-fit: fill;
+}
+
+.user--details {
+    padding: 10px;
+}
+
+.user--personal--details {
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    word-wrap: wrap;
+}
+
+.user--description {
+    word-wrap: wrap;
+}
+
+.user--name {
+    font-size: 1.2rem;
+}
+
+.user--role {
+    font-size: 0.8rem;
+}
+
+.contact--details {
+    font-size: 0.8rem;
+}
+
+.contact--details i {
+    margin-right: 5px;
+}
+
+/* ! Skills Section */
+
+.skills--wrapper {
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 1);
+    background-color: #ffffff;
+}
+
+.skills--wrapper h2 {
+    font-size: 1.2rem;
+    padding: 10px 5px;
+}
+
+.frontend--skills {
+    column-count: 2;
+}
+
+.frontend--skill--item {
+    padding: 5px;
+    color: #4f4f4f;
+    font-size: 1rem;
+    position: relative;
+    vertical-align: text-top;
+    word-wrap: break-word;
+}
+
+.frontend--skill--item .bar {
+    height: 0.5rem;
+    border-radius: 10px;
+    background-color: #c4c4c4;
+    width: 55%;
+    position: absolute;
+    top: 11px;
+    right: 20px;
+}
+
+.react::after {
+    content: "";
+    height: 0.5rem;
+    width: 60%;
+    position: absolute;
+    background: #2f80ed 70%;
+    border-radius: 10px;
+}
+
+.javascript::after {
+    content: "";
+    height: 0.5rem;
+    width: 70%;
+    position: absolute;
+    background: #2f80ed 70%;
+    border-radius: 10px;
+}
+
+.css::after {
+    content: "";
+    height: 0.5rem;
+    width: 85%;
+    position: absolute;
+    background: #2f80ed 70%;
+    border-radius: 10px;
+}
+
+.vue::after {
+    content: "";
+    height: 0.5rem;
+    width: 45%;
+    position: absolute;
+    background: #2f80ed 70%;
+    border-radius: 10px;
+}
+
+.redux::after {
+    content: "";
+    height: 0.5rem;
+    width: 70%;
+    position: absolute;
+    background: #2f80ed 70%;
+    border-radius: 10px;
+}
+
+.react__native::after {
+    content: "";
+    height: 0.5rem;
+    width: 40%;
+    position: absolute;
+    background: #2f80ed 70%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .user--info {
+        display: block;
+    }
+
+    .user--image {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .user--personal--details {
+        display: block;
+    }
+
+    .frontend--skills {
+        column-count: 1;
+    }
+}
