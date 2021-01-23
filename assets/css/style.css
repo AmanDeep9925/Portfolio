@@ -49,6 +49,10 @@ ul {
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Common classes */
 
 .flex {
@@ -121,7 +125,7 @@ ul {
 /* ! Skills Section */
 
 .skills--wrapper {
-    width: 100%;
+    width: 40%;
     padding: 20px 20px;
     border-radius: 10px;
     box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 1);
@@ -131,10 +135,6 @@ ul {
 .skills--wrapper h2 {
     font-size: 1.2rem;
     padding: 10px 5px;
-}
-
-.frontend--skills {
-    column-count: 2;
 }
 
 .frontend--skill--item {
@@ -210,6 +210,59 @@ ul {
     border-radius: 10px;
 }
 
+/* ! Blogs section */
+
+.blogs {
+    height: 20px;
+    width: 100%;
+    padding: 15px 20px 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.6);
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.blog--container {
+    padding: 10px 0px 10px 30px;
+
+    border-radius: 10px;
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.6);
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.blog--img {
+    flex: 2;
+    max-width: 50%;
+    max-height: 350px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    object-fit: cover;
+    margin-left: 40px;
+}
+
+.blog--header {
+    margin: 20px 0;
+    color:#b8b8b8;
+}
+
+.blog--title {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.blog--content {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.blog--link a{
+    margin: 20px 0;
+    color:#5C94E1;
+}
+
 @media screen and (max-width: 600px) {
     .user--info {
         display: block;
@@ -222,9 +275,5 @@ ul {
 
     .user--personal--details {
         display: block;
-    }
-
-    .frontend--skills {
-        column-count: 1;
     }
 }
