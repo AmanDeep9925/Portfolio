@@ -49,7 +49,7 @@ ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -217,9 +217,9 @@ a{
     width: 100%;
     padding: 15px 20px 30px 20px;
     border-radius: 10px;
-    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 1px 20px -5px rgba(0, 0, 0, 0.5);
     background-color: #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .blog--container {
@@ -233,8 +233,7 @@ a{
 }
 
 .blog--img {
-    flex: 2;
-    max-width: 50%;
+    max-width: auto;
     max-height: 350px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -244,7 +243,7 @@ a{
 
 .blog--header {
     margin: 20px 0;
-    color:#b8b8b8;
+    color: #b8b8b8;
 }
 
 .blog--title {
@@ -258,9 +257,59 @@ a{
     font-size: 1rem;
 }
 
-.blog--link a{
+.blog--link a {
     margin: 20px 0;
-    color:#5C94E1;
+    color: #5c94e1;
+}
+
+/* ! Experience section */
+
+.experiences {
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.6);
+    background-color: #ffffff;
+}
+
+.experiences h1 {
+    font-size: 1.5rem;
+    color: #4F4F4F;
+;
+}
+
+.company {
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.company--logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.work--detail {
+    padding: 0 10px;
+}
+
+.work--detail .designation {
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.work--detail .date {
+    font-size: 0.8rem;
+    padding-top: 10px;
+    color: #4F4F4F;
+
+}
+
+.work--detail .description {
+    font-size: 0.8rem;
+    padding-top: 10px;
+    color: #828282;
+
 }
 
 @media screen and (max-width: 600px) {
