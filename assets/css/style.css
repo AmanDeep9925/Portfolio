@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+body {
+    color: #333;
+    background-color: snow;
+    margin: 0 auto;
+    max-width: 1000px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 10px 0;
+    padding: 0;
+}
+
+p{
+    color:#828282;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container--item {
+    padding: 8px;
+    border-radius: 6px;
+    /* border: 2px solid red; */
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 24px;
+}
+
+.fas {
+    color: black;
+}
+
+/* User section */
+.user--image {
+    border-radius: 10px;
+}
+
+.user {
+    padding: 10px;
+}
+
+.username,
+.email,
+.phone {
+    color: #4f4f4f;
+}
+
+.designation,
+.about--user {
+    color: gray;
+}
+
+/* ! Skills section  */
+.user--skills {
+    padding: 0px 20px;
+}
+
+.skills {
+    list-style: none;
+}
+
+.skill--item {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill--progress {
+    width: 180px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #c4c4c4;
+    position: relative;
+}
+
+.skill--progress::before {
+    content: "";
+    height: 8px;
+    border-radius: 5px;
+    background-color: #2f80ed;
+    position: absolute;
+}
+
+.react::before {
+    width: 60%;
+}
+
+.javascript::before {
+    width: 80%;
+}
+
+.css::before {
+    width: 80%;
+}
+
+.vue::before {
+    width: 40%;
+}
+
+.redux::before {
+    width: 70%;
+}
+
+.react-native::before {
+    width: 75%;
+}
+
+/* ! Experience section */
+
+.user--experience {
+    padding: 10px 20px;
+}
+
+/* ! company */
+.company--logo {
+    width: 150px;
+}
+
+.company--card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.company--details {
+    align-self: center;
+    padding: 0 20px;
+}
+
+/* ! Project sections */
+
+.projects--header {
+    padding: 10px 20px;
+    color: #4f4f4f;
+    margin-bottom: 10px;
+}
+
+.project--card {
+    padding: 8px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    margin: 10px 0;
+}
+
+.project--image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project--detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag--item {
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.project--name {
+    padding: 0 10px;
+    font-size: 1.5rem;
+}
+
+.project--about {
+    padding: 0 10px;
+}
+
+.project--links {
+    padding: 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: inline;
+}
+
+.demo--btn {
+    background-color: #2f80ed;
+}
+
+.code--btn {
+    border: 1px solid #2f80ed;
+}
+
+.demo--btn a {
+    color: white;
+}
+
+.code--btn a {
+    color: #2f80ed;
+}
+
+/* ! Blogs section */
+
+.blog--header {
+    padding: 5px 20px;
+    color: #4f4f4f;
+    margin-bottom: 10px;
+}
+
+.blogs--card {
+    padding: 8px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+
+.blog--heading {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog {
+    color: #c4c4c4;
+}
+
+/* ! Hobbies section */
+.hobbies--header {
+    padding: 0 10px;
+}
+
+.hobbies--list {
+    /* display: flex; */
+}
+
+.hobby {
+    padding: 10px;
+}
+
+@media (min-width: 720px) {
+    img {
+        width: 40%;
+    }
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .user--info {
+        grid-column: 1 / span 5;
+        display: flex;
+    }
+
+    .user {
+        padding: 20px;
+    }
+
+    .user--skills {
+        grid-column: 1 / span 2;
+    }
+
+    .user--experience {
+        grid-column: 3 / span 3;
+        grid-row: 4 / span 2;
+    }
+
+    .user--blogs {
+        grid-column: 3 / span 3;
+        grid-row: 2 / span 2;
+    }
+
+    .user--hobbies {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 3;
+    }
+
+    .user--projects {
+        grid-column: 1 / span 5;
+    }
+
+    .blog--image {
+        width: 100%;
+        object-fit: scale-down;
+    }
+
+    .hobby--img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1020px) {
+    img {
+        width: 300px;
+    }
+    .container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .user--info {
+        grid-column: 1 / span 6;
+        display: flex;
+    }
+
+    .user--image {
+        flex: 1;
+    }
+
+    .user {
+        padding: 20px;
+    }
+
+    .user--card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .user--skills {
+        grid-column: 1 / span 2;
+    }
+
+    .user--experience {
+        grid-column: 3 / span 4;
+        grid-row: 4 / span 2;
+    }
+
+    .company--card {
+        flex-wrap: nowrap;
+    }
+
+    .user--blogs {
+        grid-column: 3 / span 4;
+        grid-row: 2 / span 2;
+    }
+
+    .user--hobbies {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 3;
+    }
+
+    .user--projects {
+        grid-column: 1 / span 6;
+    }
+
+    .projects--container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project--card {
+        width: 32%;
+        display: block;
+    }
+
+    .project--image {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .blog--heading {
+        justify-content: space-between;
+    }
+
+    .blog--heading h1 {
+        width: 300px;
+        font-size: 3rem;
+        word-wrap: break-word;
+    }
+
+    .blog--image {
+        width: 40%;
+        object-fit: fill;
+    }
+
+    .skill--progress {
+        width: 150px;
+    }
+
+    .hobby--img {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+    }
+}
